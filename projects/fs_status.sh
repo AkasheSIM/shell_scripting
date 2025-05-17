@@ -5,7 +5,7 @@
 
 FU=$(df -h | grep '/mnt/c' | awk '{print $5}' | tr -d '%')
 
-TO="lodhijanhavi@gmail.com"
+TO="akash.katpure@gmail.com"
 
 if [ -n "$FU" ] && [ "$FU" -ge 35 ]; then
     echo "Warning: disk space is low - $FU%" | mail -s "Disk space Alert!" "$TO"
